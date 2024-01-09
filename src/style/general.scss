@@ -6,87 +6,120 @@
     box-sizing: border-box;
 }
 
-header {
-    .nav-container{
-        nav{
-            display: flex;
-            position: relative;
-            justify-content: end;
-            margin: 0 17rem;
-            padding: 1.2rem;
-            background-color: green;
-            .logo-container{
-                position: absolute;
-                top: 0;
-                left: 2rem;
-                img{
-                    width: 7rem;
+body{
+    header {
+        .nav-container{
+            nav{
+                display: flex;
+                position: relative;
+                justify-content: end;
+                margin: 0 17rem;
+                padding: 1.2rem;
+                background-color: green;
+                font-family: 'Roboto', sans-serif;
+                .logo-container{
+                    position: absolute;
+                    top: 0;
+                    left: 2rem;
+                    img{
+                        width: 7rem;
+                    }
+                }
+                ul{
+                    list-style: none;
+                    display: flex;
+                    li {
+                        margin: 0 1rem;
+                        border-bottom: 2px solid red;
+                        a{
+                            color: black;
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 0.7rem;
+                        }
+                    }
                 }
             }
-            ul{
-                list-style: none;
+        }
+        .jumbotron-container{
+            .jumbotron{
+                padding: 10rem 0 0 0;
+                background-image: url("../assets/img/02_Landing-Page.jpg");
                 display: flex;
-                li {
-                    margin: 0 1rem;
-                    a{
-                        color: black;
-                        text-decoration: none;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                h1{
+                    font-weight: 100;
+                    font-size: 3rem;
+                    text-wrap: wrap;
+                    margin: 0 25rem 3rem 25rem;
+                }
+                button{
+                    background-color: rgba(255, 255, 255, 0);
+                    border: 1px solid $brcGray;
+                    font-size: 0.7rem;
+                    padding: 0.7rem 2rem;
+                }
+            }
+        }
+        .intro-contents-container{
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            h2{
+                margin: 0 23rem 0 23rem;
+                font-weight: 500;
+                span{
+                    font-weight: bold;
+                    color: $tcRedFaded;
+                }
+            }
+            .intro-contents-cards{
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                li{ 
+                    width: 15rem;
+                    img{
+                        width: 3rem;
+                    }
+                    h5{
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                        text-wrap: wrap;
+                    }
+                }
+            }
+            .intro-contents-other-info{
+                display: flex;
+                justify-content: center;
+                li{
+                    span{
+                        &.tc-orange{
+                            color: $tcOrange
+                        }
+                        &.tc-red-faded{
+                            color: $tcRedFaded;
+                        }
+                        &.tc-green-mint{
+                            color: $tcGreeMint;
+                        }
                     }
                 }
             }
         }
     }
-    .jumbotron-container{
-        .jumbotron{
+    main{
+        .main-content{
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
-        }
-    }
-    .intro-contents-container{
-        text-align: center;
-        h2{
-            span{
-                color: $tcRedFaded;
+            ul{
+                display: flex;
             }
-        }
-        .intro-contents-cards{
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            li{
-                img{
-                    width: 5rem;
-                }
-            }
-        }
-        .intro-contents-other-info{
-            display: flex;
-            justify-content: center;
-            li{
-                span{
-                    &.tc-orange{
-                        color: $tcOrange
-                    }
-                    &.tc-red-faded{
-                        color: $tcRedFaded;
-                    }
-                    &.tc-green-mint{
-                        color: $tcGreeMint;
-                    }
-                }
-            }
-        }
-    }
-}
-main{
-    .main-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        ul{
-            display: flex;
         }
     }
 }

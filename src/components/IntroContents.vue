@@ -10,7 +10,7 @@
                     Online Coaching
                 </h5>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </p>
             </li>
             <li>
