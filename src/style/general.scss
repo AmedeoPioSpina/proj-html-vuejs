@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    .nav-container{
+        nav{
+            display: flex;
+            position: relative;
+            justify-content: end;
+            margin: 0 17rem;
+            padding: 1.2rem;
+            background-color: green;
+            .logo-container{
+                position: absolute;
+                top: 0;
+                left: 2rem;
+                img{
+                    width: 7rem;
+                }
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                li {
+                    margin: 0 1rem;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .jumbotron-container{
+        .jumbotron{
+            background-image: url("../assets/img/02_Landing-Page.jpg");
+        }
+    }
+}

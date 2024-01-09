@@ -2,7 +2,7 @@
     <section class="nav-container">
             <nav>
                 <div class="logo-container">
-                    <img src="../assets/img/Logo.png" alt="Picwik's logo">
+                    <img src="../assets/img/Logo.jpg" alt="Picwik's logo">
                 </div>
                 <ul>
                     <li>
@@ -41,5 +41,4 @@ export default {
 }
 </script>
 <style lang="">
-    
 </style>
