@@ -1,3 +1,5 @@
+@use "./partial/variables.scss" as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +38,55 @@ header {
     }
     .jumbotron-container{
         .jumbotron{
-            background-image: url("../assets/img/02_Landing-Page.jpg");
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .intro-contents-container{
+        text-align: center;
+        h2{
+            span{
+                color: $tcRedFaded;
+            }
+        }
+        .intro-contents-cards{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            li{
+                img{
+                    width: 5rem;
+                }
+            }
+        }
+        .intro-contents-other-info{
+            display: flex;
+            justify-content: center;
+            li{
+                span{
+                    &.tc-orange{
+                        color: $tcOrange
+                    }
+                    &.tc-red-faded{
+                        color: $tcRedFaded;
+                    }
+                    &.tc-green-mint{
+                        color: $tcGreeMint;
+                    }
+                }
+            }
+        }
+    }
+}
+main{
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul{
+            display: flex;
         }
     }
 }
