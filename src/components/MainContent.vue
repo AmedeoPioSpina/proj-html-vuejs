@@ -68,7 +68,7 @@
                     <img src="../assets/img/video-bg-3.jpg" alt="">
                     <div>
                         <button>
-                            <img src="../assets/svg/svg-3.svg" alt="">
+                            <i class="fa-solid fa-play"></i>
                         </button>
                     </div>
                 </div>
@@ -80,16 +80,16 @@
                         Princeton offers admission information sessions and student-led tours to campus visitors
                     </p>
                     <span>
-                        Learn more <i></i>
+                        Learn more <i class="fa-solid fa-chevron-right"></i>
                     </span>
                     <p>
                         Admission information sessions and student-led tours to campus visitors
                     </p>
                     <span>
-                        Learn more <i></i>
+                        Learn more <i class="fa-solid fa-chevron-right"></i>
                     </span>
                     <span>
-                        <i></i> Event Locations <i></i>
+                        <i class="fa-regular fa-map"></i> Event Locations <i class="fa-solid fa-chevron-right"></i>
                     </span>
                 </div>
             </div>

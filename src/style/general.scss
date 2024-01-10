@@ -167,12 +167,14 @@ body{
         }
     }
     main{
+        background-color: $bcWhiteOff;
+        font-family: 'Roboto', sans-serif;
         .main-content-container{
+            margin-bottom: 5rem;
             .main-content{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                font-family: 'Roboto', sans-serif;
                 h2{
                     font-weight: 500;
                     margin-bottom: 2rem;
@@ -181,6 +183,7 @@ body{
                     margin: 0 27rem 2.5rem 27rem;
                     text-wrap: wrap;
                     text-align: center;
+                    line-height: 1.5rem;
                 }
                 ul{
                     display: flex;
@@ -252,12 +255,20 @@ body{
                     position: relative;
                     .presentation-video-container{
                         position: relative;
-                        margin-right: 22rem;
+                        margin-right: 19rem;
                         div{
                             position: absolute;
-                            top: 0;
+                            top: 40%;
+                            left: 40%;
                             button{
-
+                                width: 4.5rem;
+                                height: 4.5rem;
+                                font-size: 2rem;
+                                border-radius: 25rem;
+                                border: none;
+                                padding-left: 0.3rem;
+                                background-color: $bgWhite;
+                                color: $tcRedFaded;
                             }
                         }
                         img{
@@ -270,20 +281,125 @@ body{
                         left: 40%;
                         width: 27rem;
                         height: 27rem;
-                        background-color: red;
+                        background-color: $bgWhite;
+                        box-shadow: 4px 6px 20px 0px $brcGray;
+                        padding: 0 1.8rem;
                         h5{
                             text-align: center;
+                            color: $tcWhite;
+                            background-color: $bgRedFaded;
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            padding: 1.5rem 0;
+                            margin: 0 3.7rem 3rem 3.7rem;
                         }
-
+                        p{
+                            font-weight: 500;
+                            line-height: 1.5rem;
+                            margin: 0 2rem 1rem 0;
+                        }
                         span{
+                            display: block;
+                            font-weight: 600;
+                            font-size: 0.7rem;
+                            margin-bottom: 0.8rem;
+                            
+                            i {
+                                font-size: 0.6rem;
+                                margin: 0 0.3rem 0 0.1rem;
+                            }
                             &:last-child{
                                 display: block;
                                 text-align: center;
+                                margin-top: 2.5rem;
                             }
                         }
                     }
                 }
             }
+        }
+        .last-content-container{
+            .last-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    font-weight: 500;
+                    margin-bottom: 2rem;
+                }
+                .intro-last-content{
+                    margin: 0 27rem 3.2rem 27rem;
+                    text-wrap: wrap;
+                    text-align: center;
+                    line-height: 1.5rem;
+                }
+                .last-content-cards{
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    gap: 1.5rem;
+                    margin-bottom: 5.5rem;
+                    width: 15rem;
+                    .last-content-card{
+                        box-shadow: 0px 2px 15px 0px #cccccc;
+                        div{
+                            display: flex;
+                            gap: 1.5rem;
+                            margin-bottom: 1.5rem;
+                            img{
+                                width: 15rem;
+                            }
+                        }
+                        ul{
+                            display: flex;
+                            list-style: none;
+                            gap: 1.5rem;
+                            padding-left: 1.2rem;
+                            margin-bottom: 1rem;
+                            li{
+                                font-weight: 300;
+                                font-size: 0.8rem;
+                                i{
+                                    font-size: 0.6rem;
+                                    margin-right: 0.3rem;
+                                }
+                            }
+                        }
+                        h5{
+                            font-size: 1rem;
+                            font-weight: 500;
+                            margin: 0 0 1.8rem 1rem;
+                            line-height: 1.5rem;
+                            text-wrap: wrap;
+                            border-bottom: 1px solid $brcRedFaded;
+                            border-image: linear-gradient(to right, $brcRedFaded 20%, transparent 20%) 100% 1;
+                            padding-bottom: 0.7rem;
+                        }
+                        p{
+                            font-weight: 300;
+                            font-size: 0.8rem;
+                            padding: 0 0 1.5rem 1rem;
+                            i{
+                                font-size: 0.7rem;
+                                margin-left: 0.2rem;
+                            }
+                        }
+                    }
+                }
+                .roll-container{
+                    display: flex;
+                    list-style: none;
+                    width: 100vw;
+                    li{
+                        width: calc(100% / 4);
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            
+                        }
+                    }
+                }
+            }       
         }
     }
 }
