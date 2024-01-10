@@ -35,18 +35,21 @@
         </ul>
         <ul class="intro-contents-other-info">
             <li>
+                <img class="background-shape-image" src="../assets/img/counter-shape-1-1-1.png" alt="">
                 <p>
-                    <span class="tc-orange">6500 +</span> Strudents
+                    <span class="tc-orange">6500<span>+</span></span> Strudents
                 </p>
             </li>
             <li>
+                <img class="background-shape-image" src="../assets/img/counter-shape-2-1-1.png" alt="">
                 <p>
-                    <span class="tc-red-faded">200 +</span> Online Curses
+                    <span class="tc-red-faded">200<span>+</span></span> Online Curses
                 </p>
             </li>
             <li>
+                <img class="background-shape-image" src="../assets/img/counter-shape-3-1-1.png" alt="">
                 <p>
-                    <span class="tc-green-mint">100 %</span> Happy Clients
+                    <span class="tc-green-mint">100<span>%</span></span> Happy Clients
                 </p>
             </li>
             

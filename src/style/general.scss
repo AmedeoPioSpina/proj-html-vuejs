@@ -30,12 +30,19 @@ body{
                     display: flex;
                     li {
                         margin: 0 1rem;
-                        border-bottom: 2px solid red;
+                        border-bottom: 2px solid rgba(255, 255, 255, 0);
                         a{
                             color: black;
                             text-decoration: none;
                             font-weight: bold;
                             font-size: 0.7rem;
+                        }
+                        &:hover{
+                            border-bottom: 2px solid; 
+                            border-image: linear-gradient(to left, $brcRedFaded 35%, transparent 35%) 100% 1;
+                            a{
+                                color: $tcRed;
+                            }
                         }
                     }
                 }
@@ -60,6 +67,11 @@ body{
                     border: 1px solid $brcGray;
                     font-size: 0.7rem;
                     padding: 0.7rem 2rem;
+                    &:hover {
+                        background-color: $bgRedFaded;
+                        border-color: $brcRedFaded;
+                        color: $tcWhite;
+                    }
                 }
             }
         }
@@ -67,7 +79,7 @@ body{
             font-family: 'Roboto', sans-serif;
             text-align: center;
             h2{
-                margin: 0 23rem 0 23rem;
+                margin: 0 23rem 4rem 23rem;
                 font-weight: 500;
                 span{
                     font-weight: bold;
@@ -78,18 +90,52 @@ body{
                 display: flex;
                 justify-content: center;
                 list-style: none;
+                gap: 0.8rem;
+                margin-bottom: 2.5rem;
                 li{ 
+                    box-shadow: 0px 2px 15px 0px #cccccc;
                     width: 15rem;
+                    padding: 2rem 1rem 2.5rem 1rem;
                     img{
                         width: 3rem;
+                        margin-bottom: 1rem;
                     }
                     h5{
                         font-size: 1.1rem;
                         font-weight: 500;
+                        margin-bottom: 0.8rem;
                     }
                     p{
                         font-size: 0.8rem;
                         text-wrap: wrap;
+                        line-height: 1.5rem;
+                    }
+                    &:hover {
+                        h5{
+                            color: $tcRed;
+                        }
+                    }
+                }
+            }
+            ul:last-child {
+                list-style: none;
+                gap: 0.8rem;
+                margin-bottom: 2.5rem;
+                li{
+                    width: 15rem;
+                    
+                    p{
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        span{
+                            font-weight: 500;
+                            font-size: 2rem;
+                            span{
+                                margin:0 0.7rem;
+                            }
+                        }
                     }
                 }
             }
@@ -97,6 +143,14 @@ body{
                 display: flex;
                 justify-content: center;
                 li{
+                    position: relative;
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 13%;
+                        transform: translateY(-10%);
+                        width: 4.5rem;
+                    }
                     span{
                         &.tc-orange{
                             color: $tcOrange
@@ -113,12 +167,122 @@ body{
         }
     }
     main{
-        .main-content{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            ul{
+        .main-content-container{
+            .main-content{
                 display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: 'Roboto', sans-serif;
+                h2{
+                    font-weight: 500;
+                    margin-bottom: 2rem;
+                }
+                .intro-main-content{
+                    margin: 0 27rem 2.5rem 27rem;
+                    text-wrap: wrap;
+                    text-align: center;
+                }
+                ul{
+                    display: flex;
+                    list-style: none;
+                    gap: 1.5rem;
+                    margin-bottom: 4rem;
+                    li{
+                        box-shadow: 0px 2px 15px 0px #cccccc;
+                        width: 15rem;
+                        div{
+                            overflow: hidden;
+                            height: 8.5rem;
+                            margin-bottom: 1.5rem;
+                            img{
+                                width: 15rem;
+                            }
+                        }
+                        .course-type{
+                            margin-bottom: 0.2rem;
+                        }
+                        h5{
+                            font-size: 1rem;
+                            font-weight: 500;
+                            margin: 0 0 1.3rem 1rem;
+                            line-height: 1.5rem;
+                        }
+                        p{
+                            font-weight: 400;
+                            font-size: 0.9rem;
+                            margin: 0 0 1rem 1rem;
+                            line-height: 1.5rem;
+                        }
+                        
+                        span{
+                            color: $tcRedFaded;
+                            font-size: 0.6rem;
+                            display: block;
+                            margin: 1.7rem 0 1.5rem 1rem;
+                        }
+                    }
+                }
+                div{
+                    position: relative;
+                    margin-bottom: 4rem;
+                    .citation{
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        text-align: center;
+                        margin: 0 21rem;
+                        line-height: 2.2rem;
+                        span{
+                            font-weight: bold;
+                            text-decoration: underline;
+                            text-decoration-thickness: 1px;
+                            text-underline-offset: 8px;
+                            color: $tcRedFaded;
+                        }
+                    }
+                    .background-quote-image {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 12rem;
+                    }
+                }
+                .upcoming-events-container{
+                    display: flex;
+                    position: relative;
+                    .presentation-video-container{
+                        position: relative;
+                        margin-right: 22rem;
+                        div{
+                            position: absolute;
+                            top: 0;
+                            button{
+
+                            }
+                        }
+                        img{
+                            width: 27rem;
+                        }
+                    }
+                    .upcoming-events{
+                        position: absolute;
+                        top: 15%;
+                        left: 40%;
+                        width: 27rem;
+                        height: 27rem;
+                        background-color: red;
+                        h5{
+                            text-align: center;
+                        }
+
+                        span{
+                            &:last-child{
+                                display: block;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -4,13 +4,15 @@
             <h2>
                 Recent Courses
             </h2>
-            <p>
+            <p class="intro-main-content">
                 Whether you considering a foundation course or undergraduate dagree master's or a PhD, academics is a place where students thrive.
             </p>
             <ul>
                 <li>
-                    <img src="" alt="">
-                    <span>Free</span>
+                    <div>
+                        <img src="../assets/img/bruce-mars-FWVMhUa_wbY-unsplash.jpg" alt="">
+                    </div>
+                    <p class="course-type">Free</p>
                     <h5>
                         UI Animation using Sketch 3,
                         Principle App, and Flinto
@@ -18,46 +20,59 @@
                     <p>
                         This online photograpy will teach you how to take amazing images and even sell...
                     </p>
-                    <p class="course-manager">
+                    <span>
                         Course by : University
-                    </p>
+                    </span>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <span>Free</span>
+                    <div>
+                        <img src="../assets/img/course-1-2.jpg" alt="">
+                    </div>
+                    <p class="course-type">Free</p>
                     <h5>
                         The Ultimate Drawing Course - Beginner to Advanced
                     </h5>
                     <p>
                         This online photograpy will teach you how to take amazing images and even sell...
                     </p>
-                    <p class="course-manager">
+                    <span>
                         Course by : University
-                    </p>
+                    </span>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <span>Free</span>
+                    <div>
+                        <img src="../assets/img/william-thomas-ny6tO4ItOEY-unsplash.jpg" alt="">
+                    </div>
+                    <p class="course-type">Free</p>
                     <h5>
                         Your Complete Guide to Photography
                     </h5>
                     <p>
                         This online photograpy will teach you how to take amazing images and even sell...
                     </p>
-                    <p class="course-manager">
+                    <span>
                         Course by : University
-                    </p>
+                    </span>
                 </li>
             </ul>
 
-            <p class="citation">
-                "Academic was committed yo my succes from the moment I attended an Open House. Whit the support of caring <span>advisors, professors, and staff</span> i was 
-                able to thrive in courses, gain recognition through scholarship, and finish <strong>whit confidence in my <span>@academics</span> abilities.</strong>"
-            </p>
             <div>
-                <img src="../assets/img/video-bg-3.jpg" alt="">
-                <button></button>
-                <div>
+                <p class="citation">
+                    "Academic was committed yo my succes from the moment I attended an Open House. Whit the support of caring <span>advisors, professors, and staff</span> i was 
+                    able to thrive in courses, gain recognition through scholarship, and finish <strong>whit confidence in my <span>@academics</span> abilities.</strong>"
+                </p>
+                <img class="background-quote-image" src="../assets/img/quote.png" alt="">
+            </div>
+            <div class="upcoming-events-container">
+                <div class="presentation-video-container">
+                    <img src="../assets/img/video-bg-3.jpg" alt="">
+                    <div>
+                        <button>
+                            <img src="../assets/svg/svg-3.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="upcoming-events">
                     <h5>
                         Upcoming Events
                     </h5>
