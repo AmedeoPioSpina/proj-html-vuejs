@@ -69,14 +69,46 @@
             <ul class="roll-container">
                 <li>
                     <img src="../assets/img/gallery-3-3.jpg" alt="">
+                    <div class="roll-hover">
+                        <div>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <p>
+                            Driving Innovation
+                        </p>
+                    </div>
                 </li>
                 <li>
+                    <div class="roll-hover">
+                        <div>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <p>
+                            Driving Innovation
+                        </p>
+                    </div>
                     <img src="../assets/img/news-3-2.jpg" alt="">
                 </li>
                 <li>
+                    <div class="roll-hover">
+                        <div>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <p>
+                            Driving Innovation
+                        </p>
+                    </div>
                     <img src="../assets/img/gallery-1-3.jpg" alt="">
                 </li>
                 <li>
+                    <div class="roll-hover">
+                        <div>
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <p>
+                            Driving Innovation
+                        </p>
+                    </div>
                     <img src="../assets/img/gallery-2-3.jpg" alt="">
                 </li>
             </ul>

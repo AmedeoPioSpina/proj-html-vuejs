@@ -395,14 +395,160 @@ body{
                     width: 100vw;
                     li{
                         width: calc(100% / 4);
+                        position: relative;
                         img{
                             width: 100%;
                             height: 100%;
                             
                         }
+                        .roll-hover{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #d74d52b8;
+                            top: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            visibility: hidden;
+                            div{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 25rem;
+                                width: 3rem;
+                                height: 3rem;
+                                background-color: rgba(255, 255, 255, 0.396);
+                                margin-bottom: 0.5rem;
+                                i{
+                                    color: $tcWhite;
+                                }
+                            }
+                            p{
+                                font-size: 0.9rem;
+                                color: $tcWhite;
+                            }
+                        }
+                        &:hover{
+                            .roll-hover{
+                                visibility: visible;
+                            }
+                        }
                     }
                 }
             }       
+        }
+    }
+    footer{
+        color: $tcClay;
+        background-color: $bgBlueDArk;
+        padding-top: 4rem;
+        font-family: 'Roboto', sans-serif;
+        .news-letter-container{
+            margin-bottom: 4rem;
+            .news-letter{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $bgBlueDArk;
+                box-shadow: 0px 2px 15px 0px #15222E;
+                margin: 0 18rem;
+                padding: 2.5rem 0;
+                div{
+                    input{
+                        padding: 1rem;
+                        margin-left: 1.8rem;
+                        width: 12rem;
+                        border: 0;
+                        font-size: 0.7rem;
+                    }
+                    button{
+                        font-size: 0.7rem;
+                        border: 0;
+                        background-color: $bgRedFaded;
+                        color: $tcWhite;
+                        flex-grow: 1;
+                    }
+                    p{
+                        text-wrap: wrap;
+                    }
+                    &:first-child{
+                        display: flex;
+                        justify-content: flex-start;
+                        border-left: 5px solid $brcGrayDark;
+                        margin-right: 3.5rem;
+                        padding: 0.8rem 0;
+                        flex-basis: 40%;
+                    }
+                    &:last-child{
+                        flex-basis: 60%;
+                        p{
+                            font-size: 0.8rem;
+                            line-height: 1.2rem;
+
+                            i{
+                                margin-left: 0.3rem;
+                                font-size: 0.6rem;
+                            }
+                            &:first-child{
+                                margin: 0 5rem 0.5rem 0;
+                            }
+                            &:last-child{
+                                span{
+                                    color: $tcWhite;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        span{
+                            color: $tcRedFaded;
+                            text-decoration: underline white;
+                            text-underline-offset: 4px;
+                        }
+                    }
+                }
+            }
+        }
+        .useful-links-container{
+            display: flex;
+            margin: 0 0 3rem 18rem;
+            ul{
+                list-style: none;
+                margin-right: 8rem;
+                h6{
+                    color: $tcWhite;
+                    font-size: 1rem;
+                }
+                li{
+                    font-size: 0.7rem;
+                    margin-bottom: 1rem;
+                }
+                &:first-child{
+                    text-wrap: wrap;
+                    width: 8rem;
+                }
+                &:not(:first-child){
+                    li:hover:not(:first-child){
+                        color: $tcRedFaded;
+                        transform: translateX(0.5rem);
+                    }
+                }
+            }
+        }
+        .footer-band{
+            background-color: $bgBlueNight;
+            display: flex;
+            padding: 1rem 18rem;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    margin-left: 1rem;
+                }
+            }
         }
     }
 }

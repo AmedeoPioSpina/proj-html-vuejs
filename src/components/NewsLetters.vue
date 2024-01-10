@@ -9,10 +9,10 @@
             </div>
             <div>
                 <p>
-                    <span>Insights is Pickwik</span>
+                    <span>Insights is Pickwik</span> University's thought leadership publication for sharing knowledge on management, technology and innovation.
                 </p>
                 <p>
-
+                    <strong><Span>Take me there</Span></strong><i class="fa-solid fa-chevron-right"></i>
                 </p>
             </div>
         </div>
