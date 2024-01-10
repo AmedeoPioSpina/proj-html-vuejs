@@ -15,7 +15,6 @@ body{
                 justify-content: end;
                 margin: 0 17rem;
                 padding: 1.2rem;
-                background-color: green;
                 font-family: 'Roboto', sans-serif;
                 .logo-container{
                     position: absolute;
@@ -49,9 +48,12 @@ body{
             }
         }
         .jumbotron-container{
+            margin-bottom: 2rem;
             .jumbotron{
-                padding: 10rem 0 0 0;
-                background-image: url("../assets/img/02_Landing-Page.jpg");
+                padding: 5rem 0 0 0;
+                background-image: url("./src/assets/img/02_Landing-Page.jpg");
+                background-position: center;
+                background-size: cover;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -60,13 +62,14 @@ body{
                     font-weight: 100;
                     font-size: 3rem;
                     text-wrap: wrap;
-                    margin: 0 25rem 3rem 25rem;
+                    margin: 13rem 25rem 3rem 25rem;
                 }
                 button{
                     background-color: rgba(255, 255, 255, 0);
                     border: 1px solid $brcGray;
                     font-size: 0.7rem;
                     padding: 0.7rem 2rem;
+                    margin-bottom: 30rem;
                     &:hover {
                         background-color: $bgRedFaded;
                         border-color: $brcRedFaded;
